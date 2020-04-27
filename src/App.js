@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React,{Component} from "react"
+import Header from "./common/header/index.js"
+import {GlobalStyle} from "./style.js"
+import {Route,BrowserRouter} from "react-router-dom"
+import Home from "./pages/home/index.js"
+import Login from "./pages/login/index.js"
+class App extends Component{
+    constructor(props){
+        super(props)
+    }
+    render(){
+        return (
+            <div>
+                <BrowserRouter>
+                    <GlobalStyle/>
+                        <div>
+                            <Header/>
+                            <Route path="/" exact component={Home} />
+                            <Route path="/login" exact component={Login} />
+                        </div>
+                </BrowserRouter>
+            </div>
+        )
+    }
 }
+export default App
 
-export default App;
+/* <Route path="/" exact render={() => <h1>Home</h1>} /> exact属性：只显示一个页面的内容 render:将页面内容渲染出来，属性值是一个匿名函数 */
+/* <Route path="/" exact component={Home} /> component属性的值是引入的子组件，作用是将子组件渲染出来 */
