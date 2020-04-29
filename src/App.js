@@ -2,23 +2,28 @@ import React,{Component} from "react"
 import Header from "./common/header/index.js"
 import {GlobalStyle} from "./style.js"
 import {Route,BrowserRouter} from "react-router-dom"
+import { Provider} from "react-redux"
+import store from "./store/index.js"
+
 import Home from "./pages/home/index.js"
 import Login from "./pages/login/index.js"
 class App extends Component{
-    constructor(props){
-        super(props)
-    }
+    // constructor(props){
+    //     super(props)
+    // }
     render(){
         return (
             <div>
-                <BrowserRouter>
-                    <GlobalStyle/>
-                        <div>
-                            <Header/>
-                            <Route path="/" exact component={Home} />
-                            <Route path="/login" exact component={Login} />
-                        </div>
-                </BrowserRouter>
+                <Provider store={store}>
+                    <BrowserRouter>
+                        <GlobalStyle/>
+                            <div>
+                                <Header/>
+                                <Route path="/" exact component={Home} />
+                                <Route path="/login" exact component={Login} />
+                            </div>
+                    </BrowserRouter>
+                </Provider>
             </div>
         )
     }

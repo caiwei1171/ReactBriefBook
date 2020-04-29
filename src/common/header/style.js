@@ -61,6 +61,7 @@ export const NavSearch = styled.input.attrs({
 })`
     width:160px;
     height:39px;
+    display:block;
     padding:0 30px 0 20px;
     margin-top:9px;
     margin-left:20px;
@@ -74,6 +75,22 @@ export const NavSearch = styled.input.attrs({
     &::placeholder{
         color:#666
     }
+    &.focused{
+        width:240px
+    }
+    &.slide-enter{
+        transition: all 0.2s ease-out
+    }
+    &.slide-enter-active{
+        width:240px
+    }
+    &.slide-exit{
+        transition: all 0.2s ease-out
+    }
+    &.slide-exit-active{
+        width:160px
+    }
+
 `
 export const Addition = styled.div`
 

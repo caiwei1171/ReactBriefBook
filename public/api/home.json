@@ -1,0 +1,42 @@
+{
+    "data":{
+        "articleList":[
+            {
+                "id":1,
+                "title":"疫情，让我认识到了老婆原来是个农村人",
+                "desc":"我和老婆结婚已经八年了，在这八年当中，我们几乎是天天吵架，也不知道是为啥吵架，反正总能有话题吵架。 几度我们到了离婚的边缘，就算没有离婚，日子也...",
+                "imgUrl":"https://upload-images.jianshu.io/upload_images/18428859-45ae4e678de02148.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id":2,
+                "title":"你是人间四月天",
+                "desc":"初次知道林徽因是在初中时候学了徐志摩的《再别康桥》，这首诗写的实在是太美了，是什么样的人能写出这么美的句子？ 我开始去了解他写的诗，他的身世，他...",
+                "imgUrl":"https://upload-images.jianshu.io/upload_images/15396122-eea880a8458179f3?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id":3,
+                "title":"2020如果你还想做自媒体，这些坑我建议你一定不要踩！",
+                "desc":"1.内容定位 如果你在准备做自媒体的时候，没有想好自己要做的内容，而是东做一个西做一个，没有专注某一领域的内容，最终的结果就是浪费了很多时间和精...",
+                "imgUrl":"https://upload-images.jianshu.io/upload_images/6171276-3304c2681c7b7995.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            }
+        ],
+        "images":[
+            {
+                "id":1,
+                "imgUrl":"https://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
+            },
+            {
+                "id":2,
+                "imgUrl":"https://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+            },
+            {
+                "id":3,
+                "imgUrl":"https://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+            },
+            {
+                "id":4,
+                "imgUrl":"https://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+            }
+        ]
+    }
+}
